@@ -34,10 +34,12 @@ function reset() {
 //clear the last inputted character
 function clr() {
   var error = document.getElementById("error");
+  var answer = document.getElementById("answer");
   var calc = document.getElementById("calc");
   var sliced = calc.innerText.slice(0, -1);
   calc.innerText = sliced;
   error.innerText = "";
+  answer.innerText = "";
 }
 
 //calculate the expression
