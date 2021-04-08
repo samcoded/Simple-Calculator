@@ -2,8 +2,7 @@
 # Simple Calculator
 ## Made by Samuel Anozie
 ### For CCHUB Application
-![Design](/designxd.png)
-Format: ![Designed using XD](url)
+![Design (XD)](/designxd.png)
 
 https://samcoded.github.io/Simple-Calculator/
 [Live](https://samcoded.github.io/Simple-Calculator/)
