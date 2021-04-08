@@ -67,9 +67,9 @@ function equal() {
 
 //lets make calculator work with the keyboard keys
 document.addEventListener("keydown", function (e) {
-  var isNumber = /^[0-9,.]$/i.test(e.key);
-  var isOperator = /^[7/,*,+,-]$/i.test(e.key);
-  if (isNumber) {
+  var isNumber = /^[0-9]$/i.test(e.key);
+  var isOperator = /^[/*+-]$/i.test(e.key);
+  if (isNumber || e.key === ".") {
     appendCalc(e.key, 0); //add to display when number pressed on keyboard
   }
   if (isOperator) {

@@ -47,6 +47,7 @@ main {
   margin-left: 30px;
   color: #505488;
   height: 10%;
+  user-select: none;
 }
 .info {
   display: flex;
