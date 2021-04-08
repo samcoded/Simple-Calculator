@@ -3,7 +3,7 @@ function appendCalc(value, operator) {
   var calc = document.getElementById("calc");
   var answer = document.getElementById("answer");
   var error = document.getElementById("error");
-
+  error.innerText = ""; //clear any existing error message
   if (calc.innerText.length > 40) {
     error.innerText = "CHARACTERS EXCEEDED"; //display error
   } else {
@@ -58,5 +58,7 @@ function equal() {
     if (calcanswer) {
       answer.innerHTML = calcanswer;
     }
+  } else {
+    error.innerText = "NO INPUT"; //display an error message
   }
 }

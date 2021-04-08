@@ -55,9 +55,22 @@ main {
   margin-top: 5px;
   height: 10%;
 }
+.ansdisplay {
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-left: 30px;
+  font-size: x-large;
+  color: #161569;
+  display: block;
+  padding: 5px;
+}
+.caldisplay {
+  height: 45%;
+}
 #calc,
 #answer {
-  height: 45%;
   text-align: right;
   margin-right: 30px;
   margin-left: 30px;
