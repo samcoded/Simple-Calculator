@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: black;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  align-items: center;
+}
+
+.mainbox {
+  display: block;
+  background-color: #161569;
+  color: white;
+  width: 430px;
+  height: 500px;
+  border-radius: 5px;
+  border: 1px solid #161569;
+}
+
+.displaybox {
+  background-color: #d4d8e5;
+  height: 35%;
+  margin: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+.tagline {
+  text-align: left;
+  margin-left: 30px;
+  color: #505488;
+  height: 10%;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-top: 5px;
+  height: 10%;
+}
+#calc,
+#answer {
+  height: 45%;
+  text-align: right;
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: x-large;
+  color: #161569;
+  display: block;
+  padding: 5px;
+}
+#error {
+  color: rgb(180, 65, 65);
+  font-size: small;
+}
+.inputbox {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  align-items: center;
+}
+.inputbox button {
+  list-style: none;
+  border: none;
+  background-color: #00b7d4;
+  color: #161569;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  user-select: none;
+}
+
+.inputbox button:hover {
+  background-color: #d4d8e5;
+}
+.inputbox button:active {
+  background-color: #6a6d77;
+  border: none;
+}
+.inputbox button:focus {
+  outline: 0 !important;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.input .num0 {
+  grid-area: 4/2;
+}
+.operate {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "reset reset"
+    "one two"
+    "three four"
+    "five five";
+}
+
+.operate .plus {
+  grid-area: one;
+}
+
+.operate .minus {
+  grid-area: two;
+}
+
+.operate .divide {
+  grid-area: three;
+}
+
+.operate .times {
+  grid-area: four;
+}
+
+.operate .equal {
+  grid-area: five;
+  height: auto;
+  width: auto;
+}
+.operate .reset {
+  grid-area: reset;
+  height: auto;
+  width: auto;
+}

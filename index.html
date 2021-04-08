@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="mainbox">
+        <div class="displaybox">
+          <div class="info">
+            <div class="tagline">CALCULATOR</div>
+            <div id="error"></div>
+          </div>
+          <div id="calc"></div>
+          <div id="answer"></div>
+        </div>
+        <div class="inputbox">
+          <ul class="input">
+            <button class="num1" onclick="appendCalc('1',0)">1</button>
+            <button class="num2" onclick="appendCalc('2',0)">2</button>
+            <button class="num3" onclick="appendCalc('3',0)">3</button>
+            <button class="num4" onclick="appendCalc('4',0)">4</button>
+            <button class="num5" onclick="appendCalc('5',0)">5</button>
+            <button class="num6" onclick="appendCalc('6',0)">6</button>
+            <button class="num7" onclick="appendCalc('7',0)">7</button>
+            <button class="num8" onclick="appendCalc('8',0)">8</button>
+            <button class="num9" onclick="appendCalc('9',0)">9</button>
+            <button class="num0" onclick="appendCalc('0',0)">0</button>
+            <button class="numdot" onclick="appendCalc('.',0)">.</button>
+            <button class="clear" onclick="clr()">C</button>
+          </ul>
+          <ul class="operate">
+            <button class="reset" onclick="reset()">Reset</button>
+            <button class="plus" onclick="appendCalc('+',1)">+</button>
+            <button class="minus" onclick="appendCalc('-',1)">-</button>
+            <button class="times" onclick="appendCalc('*',1)">x</button>
+            <button class="divide" onclick="appendCalc('/',1)">/</button>
+            <button class="equal" onclick="equal()">=</button>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
