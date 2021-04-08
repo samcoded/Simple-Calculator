@@ -80,13 +80,8 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "=" || e.key === "Enter") {
     equal(); //calculate when = sign is pressed
   }
-  if (
-    e.key === "Backspace" ||
-    e.key === "Delete" ||
-    e.key === "c" ||
-    e.key === "C"
-  ) {
-    clr(); //clear one line c, del or backspace is pressed
+  if (e.key === "Backspace" || e.key === "Delete") {
+    clr(); //clear one line del or backspace is pressed
   }
   if (e.key === "r" || e.key === "R") {
     reset(); //reset calculator when r is pressed
