@@ -10,4 +10,4 @@ https://samcoded.github.io/Simple-Calculator/
 
 >Click the buttons or use keyboard keys
 >R = Reset
->C = Clear last input
+>Del = Remove last character
