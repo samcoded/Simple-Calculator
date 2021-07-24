@@ -1,6 +1,5 @@
 # Simple Calculator
 ## Made by Samuel Anozie
-### For CCHUB Application
 
 #### Designed on XD
 ![Design](/designxd.png)
