@@ -1,5 +1,4 @@
 # Simple Calculator
-## Made by Samuel Anozie
 
 #### Designed on XD
 ![Design](/designxd.png)
